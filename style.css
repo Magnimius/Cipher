@@ -69,5 +69,15 @@ main {
     margin-bottom: 20px;
 }
 
+button {
+    background-color: white;
+    color:black;
+    width:10rem;
+}
+
+button:hover {
+    background-color: black;
+    color:white;
+}
 
 
