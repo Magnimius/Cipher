@@ -19,7 +19,15 @@ function stringToNum(text) {
     return numText;
 }
 function pushNum(text) {
-    
+    let numArray = text.split("");
+    for (let i = 0; i<numArray.length;i++) {
+        numArray[i] = getRandomNumber().toString() + numArray[i] + getRandomNumber().toString();
+    }
+    return numArray.join("");
 }
+
+console.log(stringToNum("Lab"));
+let x = stringToNum("Lab");
+console.log(pushNum(x));
 
 
